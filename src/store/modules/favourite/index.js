@@ -62,8 +62,11 @@ export const favourite = {
   actions: {
     fetchFavouriteMovies({ commit, state }) {
       if (!state.isLoaded) {
-        const favouriteMoviesIds = get("favourite_movies_ids");
-        if (!favouriteMoviesIds) return set("favourite_movies_ids", []);
+        let favouriteMoviesIds = get("favourite_movies_ids");
+        if (!favouriteMoviesIds) {
+          favouriteMoviesIds = [];
+          set("favourite_movies_ids", []);
+        }
         commit(GET_FAVOURITE_MOVIES_REQUEST);
         getFavouriteMovies(favouriteMoviesIds).then(
           (data) => commit(GET_FAVOURITE_MOVIES_SUCCESS, { data }),
