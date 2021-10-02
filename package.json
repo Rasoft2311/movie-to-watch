@@ -2,7 +2,7 @@
   "name": "movie-to-watch",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://Rasoft2311.github.io/movie-to-watch-site",
+  "homepage": "https://rasoft2311.github.io/movie-to-watch",
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
