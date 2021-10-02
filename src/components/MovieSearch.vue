@@ -110,7 +110,7 @@ export default {
   align-items: center;
   &__box {
     position: absolute;
-    right: 0;
+    right: -20px;
     top: 125%;
     padding: 1rem;
     border: 2px solid $primary;
