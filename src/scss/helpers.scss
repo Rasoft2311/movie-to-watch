@@ -1,0 +1,14 @@
+.side-padding-touch {
+  @include mobile {
+    padding: 0 1.2rem;
+  }
+  @include tablet-only {
+    padding: 0 3.75rem;
+  }
+}
+
+.side-padding-desktop {
+  @include desktop {
+    padding: 0 3.75rem;
+  }
+}

@@ -1,0 +1,67 @@
+@import "./variables.scss";
+@import "../../node_modules/bulma/bulma.sass";
+
+body {
+  min-width: 350px;
+}
+
+body,
+#app {
+  min-height: 100vh;
+}
+
+#app {
+  padding-top: $body-top-padding;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+html {
+  overflow: unset;
+}
+
+body, .title, .card, .navbar-item, .navbar-link {
+  color: $text-primary;
+}
+
+a {
+  color: $text-primary;
+  &:hover,
+  :focus {
+    color: $primary;
+    background-color: transparent;
+  }
+}
+
+.modal-background {
+  background-color: rgba(10, 10, 10, 0.94);
+}
+
+.modal-card {
+  border: 2px solid $primary;
+  border-radius: .25rem;
+  &-head {
+    border-radius: 0;
+    border-bottom: 2px solid $primary;
+    background: transparent;
+    & .delete {
+      width: 40px;
+      max-width: 40px;
+      height: 40px;
+      min-height: 40px;
+      background: transparent;
+      color: $text-primary;
+    }
+  }
+  &-body {
+    background: transparent;
+  }
+  &-foot {
+    border-radius: 0;
+    border-top: 2px solid $primary;
+    background: transparent;
+  }
+  &-title {
+    color: $text-primary;
+  }
+}
